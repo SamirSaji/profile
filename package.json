@@ -10,7 +10,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "smooth-scrollbar": "^8.5.3",
     "wired-elements": "^2.1.2"
   },
   "scripts": {
