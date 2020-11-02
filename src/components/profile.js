@@ -14,7 +14,7 @@ import {
 } from "wired-elements";
 export default function Profile() {
   const classes = Styles();
-  
+
   return (
     <Grid container xs={12} className={classes.profile_head_container}>
       <Grid
@@ -33,7 +33,7 @@ export default function Profile() {
         </Grid>
         <Grid>
           <p className={classes.header_name}> Mohammed Samir A</p>
-          <p className={classes.header_position_role}>Frontend Developer</p>
+          <p className={classes.header_position_role}>Web Developer</p>
         </Grid>
       </Grid>
       {/* Content Grid */}
@@ -63,7 +63,8 @@ export default function Profile() {
           <Link
             className={classes.link_button}
             href={require("../assets/pdf/SamirResume.pdf")}
-            download="SamirResume"
+            // download="SamirResume"
+            target="_blank"
           >
             Resume
           </Link>
