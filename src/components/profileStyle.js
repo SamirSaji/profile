@@ -53,7 +53,7 @@ const Styles = makeStyles((theme) => ({
     margin: "0px 15px 0px 15px",
   },
   text_basics: {
-    fontSize: "22px",
+    fontSize: "24px",
     fontWeight: "400",
     textAlign: "justify",
     [theme.breakpoints.down("md")]: {

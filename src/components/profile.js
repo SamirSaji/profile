@@ -27,7 +27,9 @@ export default function Profile() {
         <Grid className={classes.image_grid}>
           <img
             src={SamirProfileImage}
-            alt="Samir_Photo"
+            loading="lazy"
+            title="Samir's Photo"
+            alt="Samir's Photo"
             className={classes.image_header}
           ></img>
         </Grid>
@@ -38,10 +40,9 @@ export default function Profile() {
       </Grid>
       {/* Content Grid */}
       <Grid item={true} xs={12} sm={12} md={7} className={classes.content_item}>
-     
         <p className={classes.text_basics}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Break boundaries, creative
-          and innovative. Doing frontend web developer in{" "}
+          and innovative. Doing frontend web development in{" "}
           <Link href="https://www.crayond.com" target="_blank" rel="noopener">
             Crayon'd Technology
           </Link>
@@ -213,11 +214,11 @@ export default function Profile() {
         xs={12}
         sm={12}
         md={7}
-        className={classes.content_item_4}
+        className={classes.content_item_5}
       >
         <Grid>
           <p className={classes.heading_text} style={{ margin: "0px" }}>
-            Studies :{" "}
+            Experiences :{" "}
           </p>{" "}
         </Grid>
         <Grid className={classes.checkbox_items}>
@@ -228,14 +229,44 @@ export default function Profile() {
             ></wired-checkbox>
           </Grid>
           <Grid>
-            <p className={classes.studies_heading}>
-              Higher secondary school :{" "}
-            </p>
+            <p className={classes.studies_heading}>Frontend Developer : </p>
           </Grid>
         </Grid>
         <p className={classes.checkbox_content_text}>
-          -- Bharathi higher secondary school - Namakkal (2014 -2016)
+          Crayond Technology - Chennai (Jun 2020 - Present)
         </p>
+        <Grid className={classes.checkbox_items}>
+          <Grid>
+            <wired-checkbox
+              checked
+              style={{ pointerEvents: "none" }}
+            ></wired-checkbox>
+          </Grid>
+          <Grid>
+            <p className={classes.studies_heading}>Internship : </p>
+          </Grid>
+        </Grid>
+        <p className={classes.checkbox_content_text}>
+          Crayond Technology - Chennai (Sep 2019 - Feb 2020)
+        </p>
+
+        <wired-divider
+          elevation="1"
+          style={{ marginTop: "30px" }}
+        ></wired-divider>
+      </Grid>
+      <Grid
+        item={true}
+        xs={12}
+        sm={12}
+        md={7}
+        className={classes.content_item_4}
+      >
+        <Grid>
+          <p className={classes.heading_text} style={{ margin: "0px" }}>
+            Studies :{" "}
+          </p>{" "}
+        </Grid>
         <Grid className={classes.checkbox_items}>
           <Grid>
             <wired-checkbox
@@ -253,57 +284,29 @@ export default function Profile() {
           -- K S R Institute for Engineering and Technology - Namakkal (2016
           -2020)
         </p>
+        <Grid className={classes.checkbox_items}>
+          <Grid>
+            <wired-checkbox
+              checked
+              style={{ pointerEvents: "none" }}
+            ></wired-checkbox>
+          </Grid>
+          <Grid>
+            <p className={classes.studies_heading}>
+              Higher secondary school :{" "}
+            </p>
+          </Grid>
+        </Grid>
+        <p className={classes.checkbox_content_text}>
+          -- Bharathi higher secondary school - Namakkal (2014 -2016)
+        </p>
+
         <wired-divider
           elevation="1"
           style={{ marginTop: "30px" }}
         ></wired-divider>
       </Grid>
 
-      <Grid
-        item={true}
-        xs={12}
-        sm={12}
-        md={7}
-        className={classes.content_item_5}
-      >
-        <Grid>
-          <p className={classes.heading_text} style={{ margin: "0px" }}>
-            Experiences :{" "}
-          </p>{" "}
-        </Grid>
-        <Grid className={classes.checkbox_items}>
-          <Grid>
-            <wired-checkbox
-              checked
-              style={{ pointerEvents: "none" }}
-            ></wired-checkbox>
-          </Grid>
-          <Grid>
-            <p className={classes.studies_heading}>Internship : </p>
-          </Grid>
-        </Grid>
-        <p className={classes.checkbox_content_text}>
-          Crayond Technology - Chennai (Sep 2019 - Feb 2020)
-        </p>
-        <Grid className={classes.checkbox_items}>
-          <Grid>
-            <wired-checkbox
-              checked
-              style={{ pointerEvents: "none" }}
-            ></wired-checkbox>
-          </Grid>
-          <Grid>
-            <p className={classes.studies_heading}>Frontend Developer : </p>
-          </Grid>
-        </Grid>
-        <p className={classes.checkbox_content_text}>
-          Crayond Technology - Chennai (Jun 2020 - Present)
-        </p>
-        <wired-divider
-          elevation="1"
-          style={{ marginTop: "30px" }}
-        ></wired-divider>
-      </Grid>
       <Grid
         item={true}
         xs={12}
