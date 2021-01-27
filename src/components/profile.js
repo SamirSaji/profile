@@ -33,12 +33,12 @@ export default function Profile() {
         </Grid>
         <Grid>
           <p className={classes.header_name}> Mohammed Samir A</p>
-          <p className={classes.header_position_role}>Web Developer</p>
+          <p className={classes.header_position_role}>Frontend Developer</p>
         </Grid>
       </Grid>
       {/* Content Grid */}
       <Grid item={true} xs={12} sm={12} md={7} className={classes.content_item}>
-        {/* <p className={classes.text_basics}> in the sea of oridinary, make sure your website is set apart from the competition</p> */}
+     
         <p className={classes.text_basics}>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Break boundaries, creative
           and innovative. Doing frontend web developer in{" "}
@@ -48,7 +48,7 @@ export default function Profile() {
           . Working with ReactJs and NodeJs. Passion for designing beautiful and
           functional user experiences. Focus on UX/UI design, writing clean
           code, elegent and efficient. Like to became a full stack developer
-          within 2020. Open to work with any project.
+          within May 2021. Open to work with any project.
         </p>
       </Grid>
       {/* Buttons Grid */}
