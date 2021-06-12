@@ -121,7 +121,7 @@ function ProjectRow() {
                     <ProjectImage />
                 </Link>
                 <Link title='Decore' to='/Decore'>
-                    <SubHeading>Decore</SubHeading>
+                    <SubHeading>Stylori</SubHeading>
                 </Link>
                 <ProjectParagraph>
                     A tool design to help web developers build live, custom
@@ -138,7 +138,7 @@ function ProjectRow() {
                     <ProjectImage />
                 </Link>
                 <Link title='Coffee Project' to='/Coffee'>
-                    <SubHeading>Coffee By Benjamin</SubHeading>
+                    <SubHeading>Stylori Silver</SubHeading>
                 </Link>
                 <ProjectParagraph>
                     An e-commerce application built with React & Shopify for a
