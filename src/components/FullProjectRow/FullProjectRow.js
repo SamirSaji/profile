@@ -1,61 +1,60 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import { breakpoints } from '../Media';
-import Heading from '../Heading';
-import Paragraph from '../Paragraph';
-import CoffeeChemistry from '../../images/CoffeeChemistry.jpg';
+import React from "react";
+import styled from "styled-components";
+import { breakpoints } from "../Media";
+import Heading from "../Heading";
+import Paragraph from "../Paragraph";
+import CoffeeChemistry from "../../images/nac.png";
 
 const ProjectContainer = styled.div`
-    display: flex;
-    width: 100%;
-    margin-bottom: 0px;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    height: auto;
-    @media (min-width: ${breakpoints.mobileMax}) {
-        flex-wrap: nowrap;
-        margin-bottom: 70px;
-        margin-top: 40px;
-        height: 700px;
-    }
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  height: auto;
+  @media (min-width: ${breakpoints.mobileMax}) {
+    flex-wrap: nowrap;
+
+    margin-top: 40px;
+    height: 700px;
+  }
 `;
 
 const ProjectLink = styled(Paragraph)`
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 163.19%;
-    display: inline;
-    color: gray;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 163.19%;
+  display: inline;
+  color: gray;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
 
-    @media (min-width: ${breakpoints.mobileMax}) {
-        width: 119px;
-        display: block;
-        margin: auto;
-    }
+  @media (min-width: ${breakpoints.mobileMax}) {
+    width: 119px;
+    display: block;
+    margin: auto;
+  }
 
-    :hover {
-        /* border-bottom: 2px solid black; */
-    }
+  :hover {
+    /* border-bottom: 2px solid black; */
+  }
 
-    span {
-        font-size: 20px;
-    }
+  span {
+    font-size: 20px;
+  }
 `;
 
 const ProjectImage = styled.div`
-    width: 100%;
-    height: 300px;
-    border-radius: 4px;
-    transition-duration: 0.3s;
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  transition-duration: 0.3s;
 
-    @media (min-width: ${breakpoints.mobileMax}) {
-        height: 520px;
-    }
+  @media (min-width: ${breakpoints.mobileMax}) {
+    height: 520px;
+  }
 `;
 
 const Project = styled.div`
@@ -93,53 +92,57 @@ const Project = styled.div`
             background-size: cover;
             background-position-x: left;
             background-position-y: top;
+            
 
             @media (min-width: ${breakpoints.mobileMax}) {
                 background-position-x: center;
                 background-position-y: center;
+              
+            }
+            @media (max-width: ${breakpoints.mobileMax}) {
+              
+                height : 100%;
+            width : 100%;
             }
         }
     }
 `;
 
 const SubHeading = styled(Heading)`
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 30px;
 
-    @media (min-width: ${breakpoints.mobileMax}) {
-        text-align: center;
-        margin: 30px auto 0 auto;
-    }
+  @media (min-width: ${breakpoints.mobileMax}) {
+    text-align: center;
+    margin: 30px auto 0 auto;
+  }
 `;
 
 const ProjectParagraph = styled(Paragraph)`
-    margin-top: 10px;
-    max-width: unset;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  max-width: unset;
+  margin-bottom: 20px;
 
-    @media (min-width: ${breakpoints.mobileMax}) {
-        max-width: 40%;
-        text-align: center;
-        margin: 10px auto 20px auto;
-    }
+  @media (min-width: ${breakpoints.mobileMax}) {
+    max-width: 40%;
+    text-align: center;
+    margin: 10px auto 20px auto;
+  }
 `;
 
 function FullProjectRow() {
-    return (
-        <ProjectContainer>
-            <Project>
-                <ProjectImage />
-                <SubHeading>Coffee Chemistry</SubHeading>
-                <ProjectParagraph>
-                    My current work in progress, a web application that helps
-                    you brew the perfect cup of coffee.
-                </ProjectParagraph>
+  return (
+    <ProjectContainer>
+      <Project>
+        <ProjectImage />
+        <SubHeading>NAC Jewellery</SubHeading>
+        <ProjectParagraph>My current work in progress, a web application that helps you buy a Jewellers.</ProjectParagraph>
 
-                <ProjectLink>COMING SOON</ProjectLink>
-            </Project>
-        </ProjectContainer>
-    );
+        <ProjectLink>COMING SOON</ProjectLink>
+      </Project>
+    </ProjectContainer>
+  );
 }
 
 export default FullProjectRow;

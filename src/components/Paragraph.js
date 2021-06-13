@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { Float } from '../styles';
 
 const Paragraph = styled.p`
     margin: 50px 0;

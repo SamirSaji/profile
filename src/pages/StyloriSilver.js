@@ -9,14 +9,9 @@ import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Footer from "../components/footer";
 import "../index.css";
-import Coffee1 from "../images/Coffee1.png";
-import Coffee2 from "../images/Coffee2.png";
-import Coffee3 from "../images/Coffee3.jpg";
-
-import ForecastLogic from "../images/ForecastLogic.jpg";
-import ForecastComp from "../images/ForecastComp.jpg";
-import ForecastStack from "../images/ForecastStack.svg";
-
+import Coffee1 from "../images/silver.png";
+import Coffee2 from "../images/silver2.png";
+import Coffee3 from "../images/silver3.png";
 const Container = styled.div`
   margin: 50px 0;
   width: 100%;
@@ -117,69 +112,6 @@ const WebStack = styled.div`
     margin: 100px 0;
   }
 `;
-const LeftContent = styled.div`
-  width: 100%;
-  height: 300px;
-  background-image: url(${ForecastStack});
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 55%;
-  }
-`;
-const RightContent = styled.div`
-  width: 100%;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-  }
-`;
-
-const DuoImages = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 100px 0;
-  }
-`;
-
-const LeftImage = styled.div`
-  width: 100%;
-  height: 350px;
-  margin-right: 0;
-  margin-bottom: 50px;
-  background-image: url(${ForecastLogic});
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    margin-bottom: 0px;
-    margin-right: 10%;
-    background-position-x: left;
-
-    height: 350px;
-  }
-`;
-const RightImage = styled.div`
-  width: 100%;
-  height: 350px;
-  margin-bottom: 0px;
-  background-image: url(${ForecastComp});
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    background-position-x: right;
-  }
-`;
 
 const CenterText = styled.div`
   width: 100%;
@@ -192,52 +124,6 @@ const CenterText = styled.div`
   }
 `;
 
-const DuoLinks = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 150px;
-  flex-wrap: wrap;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    width: 60%;
-  }
-`;
-
-const LinkLeft = styled.div`
-  width: 100%;
-  margin: 10px auto;
-  text-align: center;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: unset;
-    text-align: left;
-    margin: unset;
-  }
-`;
-const LinkRight = styled(LinkLeft)``;
-
-const ProjectLink = styled(Paragraph)`
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 163.19%;
-  display: inline;
-  color: black;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  border-bottom: 2px solid white;
-  transition: border-bottom 0.2s;
-
-  :hover {
-    border-bottom: 2px solid black;
-  }
-
-  span {
-    font-size: 20px;
-  }
-`;
 
 function Forecast(props) {
   return (
@@ -267,7 +153,7 @@ function Forecast(props) {
             <Heading>Stylori Silver</Heading>
             <Paragraph>
               Stylori Silver is a project I built alongside Crayon'd for a Jewellery Company. We decided to create a react web
-              application that would help to create easy and reuseable component for this project. Stylori Silver used to people
+              application that would help to create easy and reuseable component for this project. Stylori Silver used to people to
               order their liked Silver jewellery. We also build Admin portal of this project so that admin can create, altered and
               delete the product easily.
             </Paragraph>
@@ -295,7 +181,7 @@ function Forecast(props) {
               </tbody>
             </ProjectTable>
           </TextContent>
-          <Image src={Coffee1} alt="Forecast Application Work in Progress" />
+          <Image src={Coffee1} alt="Stylori Silver" />
 
           <WebStack>
             <CenterText>
@@ -310,7 +196,7 @@ function Forecast(props) {
               </Paragraph>
             </CenterText>
           </WebStack>
-          <Image src={Coffee2} alt="Forecast image with differing weather information" />
+          <Image src={Coffee2} alt="Stylori Silver" />
 
           <TextContent>
             <Heading>Lessons Learned</Heading>
@@ -322,6 +208,7 @@ function Forecast(props) {
               lot more time refactoring and improving every line I code I write, for the best readability and far fewer headaches.
             </Paragraph>
           </TextContent>
+          <Image src={Coffee3} alt="Stylori Silver" />
         </Container>
       </Layout>
       <Footer projectDisplay="block" />

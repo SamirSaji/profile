@@ -9,12 +9,9 @@ import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Footer from "../components/footer";
 import "../index.css";
-import decore1 from "../images/decore1.jpg";
-import decore2 from "../images/decore2.png";
-import decore3 from "../images/decore3.jpg";
-
-import ForecastLogic from "../images/ForecastLogic.jpg";
-import ForecastComp from "../images/ForecastComp.jpg";
+import decore1 from "../images/sylori.png";
+import decore2 from "../images/stylori2.png";
+import decore3 from "../images/stylori3.png";
 
 const Container = styled.div`
   margin: 50px 0;
@@ -111,35 +108,7 @@ const WebStack = styled.div`
     margin: 100px 0;
   }
 `;
-const LeftContent = styled.div`
-  width: 100%;
-  height: 300px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 55%;
-  }
-`;
-const RightContent = styled.div`
-  width: 100%;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-  }
-`;
-
-const DuoImages = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 100px 0;
-  }
-`;
 
 const CenterText = styled.div`
   width: 100%;
@@ -152,31 +121,8 @@ const CenterText = styled.div`
   }
 `;
 
-const DuoLinks = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 150px;
-  flex-wrap: wrap;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    width: 60%;
-  }
-`;
 
-const LinkLeft = styled.div`
-  width: 100%;
-  margin: 10px auto;
-  text-align: center;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: unset;
-    text-align: left;
-    margin: unset;
-  }
-`;
 
 function Decore() {
   return (
@@ -216,7 +162,7 @@ function Decore() {
                 Crayon'd
               </a>{" "}
               for a Jewellery Company. We decided to create a react web application that would help to create easy and reuseable
-              component for this project. Stylori used to people order their liked gold, diamond, platinum and gemstones
+              component for this project. Stylori used to people to order their liked gold, diamond, platinum and gemstones
               jewellery. We also build Admin portal of this project so that admin can create, altered and delete the product
               easily.
             </Paragraph>
@@ -276,6 +222,7 @@ function Decore() {
               across a team, and we all got some more great experience with version control and reviewing each others code.
             </Paragraph>
           </TextContent>
+          <Image src={decore3} alt="stylori" />
         </Container>
       </Layout>
       <Footer projectDisplay="block" />

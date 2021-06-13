@@ -6,7 +6,7 @@ import Paragraph from "../Paragraph";
 import Logo from "../Logo";
 import { breakpoints } from "../Media";
 import ContactEmail from "../ContactEmail";
-import InstagramGrid from "../InstagramGrid";
+// import InstagramGrid from "../InstagramGrid";
 import ProjectRow from "../ProjectRow";
 
 const FooterCont = styled.div`
@@ -43,7 +43,7 @@ const Layout = styled.div`
 
   @media (min-width: ${breakpoints.tabletMin}) {
     max-width: 940px;
-    padding: 100px 0 0 0;
+
     margin: 75px auto;
   }
 
@@ -126,7 +126,7 @@ function Footer(props) {
             <ContactEmail />
           </TextContent>
         </SubContainer>
-        <InstagramGrid instagramDisplay={props.instagramDisplay} />
+        {/* <InstagramGrid instagramDisplay={props.instagramDisplay} /> */}
         <Container>
           <Link title="Home - Mohammed Samir" to="/">
             <Logo />

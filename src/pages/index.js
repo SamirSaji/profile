@@ -133,20 +133,7 @@ const HeadingImage = styled.div`
   }
 `;
 
-const SubParagraph = styled(Paragraph)`
-  margin-top: 10px;
-  max-width: unset;
-
-  @media (min-width: ${breakpoints.mobileMax}) {
-    max-width: 70%;
-  }
-`;
-
 class Page extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     console.log(`
     #     #      #######                              ### 
@@ -174,7 +161,7 @@ class Page extends React.Component {
               content="Technology has always been at the very core of my interests. From a young age, I've loved the idea of being able to build something new that people around the world can experience and interact with."
             />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://juliacodes.com/" />
+            <meta property="og:url" content="https://www.samirsaji.tech/" />
             <meta property="og:title" content="Mohammed Samir - Front End Developer - SamirSaji" />
             <meta
               property="og:description"
@@ -182,8 +169,8 @@ class Page extends React.Component {
             />
             <meta property="og:image" content={LandingImage} />
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="https://juliacodes.com/" />
-            <meta property="twitter:title" content="Julia Johnson - Front End Developer - JuliaCodes" />
+            <meta property="twitter:url" content="https://www.samirsaji.tech/" />
+            <meta property="twitter:title" content="Mohammed Samir - Front End Developer - SamirSaji" />
             <meta
               property="twitter:description"
               content="Technology has always been at the very core of my interests. From a young age, I've loved the idea of being able to build something new that people around the world can experience and interact with."
@@ -202,11 +189,11 @@ class Page extends React.Component {
           >
             <TextContentWrap>
               <Paragraph>
-                I'm a 23-year-old Front-End Developer currently working on ReactJS and NodeJS. 
+                I'm a 23-year-old Front-End Developer currently working on ReactJS and NodeJS.
                 <br />
                 <br />
                 As I've grown as a developer, I've worked alongside senior designers and developers who have raised my standards
-                for whats expected of any web application. 
+                for whats expected of any web application.
               </Paragraph>
             </TextContentWrap>
             <TextContentWrap>
@@ -227,7 +214,7 @@ class Page extends React.Component {
                   </Paragraph>
                 </TextContent>
                 <SkillTable>
-                  <row>
+                  <row is="x3d" >
                     <Paragraph>
                       <span>&#9675;</span> Javascript
                     </Paragraph>
@@ -235,7 +222,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> PostgreSQL
                     </Paragraph>
                   </row>
-                  <row>
+                  <row is="x3d" >
                     <Paragraph>
                       <span>&#9675;</span> ReactJS
                     </Paragraph>
@@ -243,7 +230,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> GraphQL
                     </Paragraph>
                   </row>
-                  <row>
+                  <row is="x3d" >
                     <Paragraph>
                       <span>&#9675;</span> NodeJS
                     </Paragraph>
@@ -251,7 +238,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> Linux
                     </Paragraph>
                   </row>
-                  <row>
+                  <row is="x3d" >
                     <Paragraph>
                       <span>&#9675;</span> HTML & CSS
                     </Paragraph>

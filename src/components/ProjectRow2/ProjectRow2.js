@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { breakpoints } from "../Media";
 import Heading from "../Heading";
 import Paragraph from "../Paragraph";
-import MediumPost from "../../images/MediumPost.jpg";
+
 import ForecastThumb from "../../images/ForecastThumb.jpg";
 import AwkwardThumb from "../../images/AwkwardThumb.jpg";
 
@@ -43,13 +43,6 @@ const ProjectLink = styled(Paragraph)`
   }
 `;
 
-const ProjectLinkSoon = styled(ProjectLink)`
-  color: darkgray;
-
-  :hover {
-    border-bottom: 2px solid transparent !important;
-  }
-`;
 
 const ProjectImage = styled.div`
   width: 100%;
@@ -106,16 +99,7 @@ const Project = styled.div`
   }
 `;
 
-const ProjectSoon = styled(Project)`
-  :hover {
-    ${ProjectImage} {
-      transform: scale(1);
-    }
-    ${ProjectLinkSoon} {
-      border-bottom: 2px solid transparent;
-    }
-  }
-`;
+
 
 const SubHeading = styled(Heading)`
   font-size: 30px;
@@ -137,31 +121,31 @@ function ProjectRow() {
   return (
     <ProjectContainer>
       <Project>
-        <Link title="Awkward - Internship" to="/Awkward">
+        <Link title="Emtax" to="/Emtax">
           <ProjectImage style={{ backgroundPosition: "right" }} />
         </Link>
-        <Link title="Awkward - Internship" to="/Awkward">
+        <Link title="Emtax" to="/Emtax">
           <SubHeading>Emtax</SubHeading>
         </Link>
-        <ProjectParagraph>Read about my experience as an intern at Awkward, a digital design agency.</ProjectParagraph>
-        <Link title="Awkward - Internship" to="/Awkward">
+        <ProjectParagraph>A tool that helps company to auditing easily. Widely used in UAE contries...</ProjectParagraph>
+        <Link title="Emtax " to="/Emtax">
           <ProjectLink>
-            Read Story <span>&#8250;</span>
+            VIEW PROJECT <span>&#8250;</span>
           </ProjectLink>
         </Link>
       </Project>
       <Project>
-        <Link title="Forecast Project" to="/Forecast">
+        <Link title="Pinecrow Project" to="/Pinecrow">
           <ProjectImage />
         </Link>
-        <Link title="Forecast Project" to="/Forecast">
+        <Link title="Pinecrow Project" to="/Pinecrow">
           <SubHeading>Pinecrow</SubHeading>
         </Link>
-        <ProjectParagraph>A 7 day weather application that sets weather data based on user input.</ProjectParagraph>
+        <ProjectParagraph>A tool that helps to managing team easily. Allocating task and view their perfomances...</ProjectParagraph>
 
-        <Link title="Forecast Project" to="/Forecast">
+        <Link title="Pinecrow Project" to="/Pinecrow">
           <ProjectLink>
-            Read Explanation <span>&#8250;</span>
+            RVIEW PROJECT <span>&#8250;</span>
           </ProjectLink>
         </Link>
       </Project>
