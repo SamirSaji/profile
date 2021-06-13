@@ -202,11 +202,11 @@ class Page extends React.Component {
           >
             <TextContentWrap>
               <Paragraph>
-                I'm a 23-year-old Front-End Developer currently working on ReactJS and NodeJS.
+                I'm a 23-year-old Front-End Developer currently working on ReactJS and NodeJS. 
                 <br />
                 <br />
                 As I've grown as a developer, I've worked alongside senior designers and developers who have raised my standards
-                for whats expected of any web application.
+                for whats expected of any web application. 
               </Paragraph>
             </TextContentWrap>
             <TextContentWrap>
